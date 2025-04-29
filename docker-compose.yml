@@ -25,6 +25,7 @@ services:
         source: ./.env
         target: /app/.env
       - ./images:/app/client/public/images
+      - ./uploads:/app/uploads
       - ./logs:/app/api/logs
       # - ./packages/data-provider/src/config.ts:/app/packages/data-provider/src/config.ts
   mongodb:
